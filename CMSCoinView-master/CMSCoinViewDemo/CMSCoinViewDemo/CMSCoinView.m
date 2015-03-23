@@ -43,6 +43,7 @@
 - (void) setPrimaryView:(UIView *)primaryView{
     _primaryView = primaryView;
     CGRect frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self.primaryView.backgroundColor=[UIColor yellowColor];
     [self.primaryView setFrame: frame];
     [self roundView: self.primaryView];
     self.primaryView.userInteractionEnabled = YES;
@@ -57,6 +58,7 @@
 - (void) setSecondaryView:(UIView *)secondaryView{
     _secondaryView = secondaryView;
     CGRect frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+     self.secondaryView.backgroundColor=[UIColor yellowColor];
     [self.secondaryView setFrame: frame];
     [self roundView: self.secondaryView];
     self.secondaryView.userInteractionEnabled = YES;
